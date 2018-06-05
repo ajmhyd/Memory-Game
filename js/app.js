@@ -1,7 +1,7 @@
 /*
  * Create a list that holds all of your cards
  */
-
+let cards = ["fa-diamond", "fa-anchor", "fa-bolt", "fa-cube", "fa-leaf", "fa-bicycle", "fa-bomb", "fa-paper-plane"];
 
 /*
  * Display the cards on the page
