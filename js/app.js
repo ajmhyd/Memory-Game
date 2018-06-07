@@ -8,23 +8,34 @@
 
 let cardList = ["fa-diamond", "fa-anchor", "fa-bolt", "fa-cube", "fa-leaf", "fa-bicycle", "fa-bomb", "fa-paper-plane", "fa-diamond", "fa-anchor", "fa-bolt", "fa-cube", "fa-leaf", "fa-bicycle", "fa-bomb", "fa-paper-plane"];
 
-restart.addEventListener('click', begin);
 /*
  * Display the cards on the page
  *   - shuffle the list of cards using the provided "shuffle" method below
  *   - loop through each card and create its HTML
  *   - add each card's HTML to the page
  */
-function begin(){
-    shuffle(cardList);
-    for (let icon of cardList){
-        let card = document.createElement('li');
-        card.innerHTML = `<li class="card"><i class="fa ${icon}></i></li>`;
-        deck.appendChild(card);
-    }
-    
+function compareCards(cardA, cardB) {
 
+}
+
+function generateBoard() {
+    let shuffledBoard = shuffle(cardList);
     
+    for(cards in shuffledBoard) {
+        let card = document.createElement('li');
+        card.classList.add('card');
+        deck.appendChild(card);
+        let icon = document.createElement('i');
+        icon.classList.add('fa');
+        icon.classList.add(`${shuffledBoard[cards]}`);
+        card.appendChild(icon);
+    }
+}
+
+generateBoard();
+
+function gameOver() {
+
 }
 
 // Shuffle function from http://stackoverflow.com/a/2450976
@@ -42,7 +53,12 @@ function shuffle(array) {
     return array;
 }
 
+function checkCard() {
 
+    document.getElementsByClassName('card').addEventListener('click', function(){
+        let card = 
+    });
+}
 /*
  * set up the event listener for a card. If a card is clicked:
  *  - display the card's symbol (put this functionality in another function that you call from this one)
