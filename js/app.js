@@ -59,22 +59,22 @@ $(document).ready(function () {
     }
 
     //reset the stars
-    function resetStars(){
-        if(!$('#starOne').hasClass('fa')){
+    function resetStars() {
+        if (!$('#starOne').hasClass('fa')) {
             $('#starOne').addClass('fa');
         }
-        if(!$('#starTwo').hasClass('fa')){
+        if (!$('#starTwo').hasClass('fa')) {
             $('#starTwo').addClass('fa');
         }
-        if(!$('#starThree').hasClass('fa')){
+        if (!$('#starThree').hasClass('fa')) {
             $('#starThree').addClass('fa');
         }
-        if(!$('#starFour').hasClass('fa')){
+        if (!$('#starFour').hasClass('fa')) {
             $('#starFour').addClass('fa');
         }
-        if(!$('#starFive').hasClass('fa')){
+        if (!$('#starFive').hasClass('fa')) {
             $('#starFive').addClass('fa');
-        }  
+        }
     }
 
     //restart button
@@ -103,16 +103,16 @@ $(document).ready(function () {
         $('#ModalOne').show();
     }
     //modal stars
-    function modalStars(){
-        if(counter > 22 && counter < 28){
+    function modalStars() {
+        if (counter > 22 && counter < 28) {
             $('#ModalFive').hide();
-        } else if (counter > 28 && counter < 34){
+        } else if (counter > 28 && counter < 34) {
             $('#ModalFour').hide();
-        }else if (counter > 34 && counter < 40) {
+        } else if (counter > 34 && counter < 40) {
             $('#ModalThree').hide();
-        }else if (counter > 40 && counter < 46) {
+        } else if (counter > 40 && counter < 46) {
             $('#ModalTwo').hide();
-        }else if (counter > 46){
+        } else if (counter > 46) {
             $('#ModalOne').hide();
         }
     }
@@ -137,15 +137,15 @@ $(document).ready(function () {
 
     //display stars
     function stars() {
-        if(counter > 22 && counter < 28){
+        if (counter > 22 && counter < 28) {
             $('#starFive').removeClass('fa');
-        } else if (counter > 28 && counter < 34){
+        } else if (counter > 28 && counter < 34) {
             $('#starFour').removeClass('fa');
-        }else if (counter > 34 && counter < 40) {
+        } else if (counter > 34 && counter < 40) {
             $('#starThree').removeClass('fa');
-        }else if (counter > 40 && counter < 46) {
+        } else if (counter > 40 && counter < 46) {
             $('#starTwo').removeClass('fa');
-        }else if (counter > 46){
+        } else if (counter > 46) {
             $('#starOne').removeClass('fa');
         }
     }
@@ -168,7 +168,7 @@ $(document).ready(function () {
                 if (matchingCards.length == 8) {
                     winner();
                 }
-            //no match
+                //no match
             } else {
                 unMatched();
             }
