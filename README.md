@@ -5,7 +5,7 @@
 * [Description](#Description)
 * [Instructions](#Instructions)
 
-##Description
+## Description
 
 A card matching game played in the browser.
 
