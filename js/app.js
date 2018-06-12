@@ -10,6 +10,7 @@ $(document).ready(function () {
     let totalSec = 0;
     let matchingCards = [];
     let matchCount = 0;
+    let final = 0;
 
     //cards array
     let cardList = ["fa-diamond", "fa-anchor", "fa-bolt", "fa-cube", "fa-leaf", "fa-bicycle", "fa-bomb", "fa-paper-plane", "fa-diamond", "fa-anchor", "fa-bolt", "fa-cube", "fa-leaf", "fa-bicycle", "fa-bomb", "fa-paper-plane"];
@@ -55,7 +56,6 @@ $(document).ready(function () {
         resetModalStars();
         //start new board
         generateBoard();
-
     }
 
     //reset the stars
@@ -90,6 +90,7 @@ $(document).ready(function () {
     function winner() {
         let finalTime = $('.time').html();
         stopTimer();
+        final = finalTime;
         $('.finalTime').html(finalTime);
         $('#myModal').modal('show');
     }
@@ -119,18 +120,23 @@ $(document).ready(function () {
     function timer() {
         ++totalSec;
         let seconds = totalSec;
-        $('.time').html(seconds);
+        switch(matchingCards.length){
+            case 8:
+                $('.time').html(final);
+                break;
+            default:
+            $('.time').html(seconds);
+        }
     }
 
     //start timer
     function startTimer() {
-        timer = setInterval(timer, 700);
+        timer = setInterval(timer, 1000);
     }
 
     //stop timer
     function stopTimer() {
-        clearInterval(timer);
-        totalSec = 0;
+        window.clearInterval(timer);
     }
 
     //display stars
