@@ -16,7 +16,7 @@ $(document).ready(function () {
     let cardArray = ["fa-diamond", "fa-anchor", "fa-bolt", "fa-cube", "fa-leaf", "fa-bicycle", "fa-bomb", "fa-paper-plane"];
 
     let cardList = cardArray.concat(cardArray);
-    
+
     //Initialize the first game
     start();
     /*
@@ -191,7 +191,7 @@ $(document).ready(function () {
             $('.show').removeClass('show');
             $('.open').removeClass('open');
             openList = [];
-        }, 750);
+        }, 650);
     }
 
     // Shuffle function from http://stackoverflow.com/a/2450976
