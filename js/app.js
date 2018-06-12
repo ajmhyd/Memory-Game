@@ -112,8 +112,6 @@ $(document).ready(function () {
             $('#ModalThree').hide();
         } else if (counter > 40 && counter < 46) {
             $('#ModalTwo').hide();
-        } else if (counter > 46) {
-            $('#ModalOne').hide();
         }
     }
 
@@ -145,8 +143,6 @@ $(document).ready(function () {
             $('#starThree').removeClass('fa');
         } else if (counter > 40 && counter < 46) {
             $('#starTwo').removeClass('fa');
-        } else if (counter > 46) {
-            $('#starOne').removeClass('fa');
         }
     }
 
