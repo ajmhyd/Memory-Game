@@ -12,9 +12,11 @@ $(document).ready(function () {
     let matchCount = 0;
     let final = 0;
 
-    //cards array
-    let cardList = ["fa-diamond", "fa-anchor", "fa-bolt", "fa-cube", "fa-leaf", "fa-bicycle", "fa-bomb", "fa-paper-plane", "fa-diamond", "fa-anchor", "fa-bolt", "fa-cube", "fa-leaf", "fa-bicycle", "fa-bomb", "fa-paper-plane"];
+    //Cards
+    let cardArray = ["fa-diamond", "fa-anchor", "fa-bolt", "fa-cube", "fa-leaf", "fa-bicycle", "fa-bomb", "fa-paper-plane"];
 
+    let cardList = cardArray.concat(cardArray);
+    
     //Initialize the first game
     start();
     /*
@@ -194,7 +196,7 @@ $(document).ready(function () {
 
     // Shuffle function from http://stackoverflow.com/a/2450976
     function shuffle(array) {
-        var currentIndex = array.length,
+        let currentIndex = array.length,
             temporaryValue, randomIndex;
 
         while (currentIndex !== 0) {
