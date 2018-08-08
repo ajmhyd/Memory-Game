@@ -105,7 +105,7 @@ $(document).ready(function () {
         $('#ModalTwo').show();
         $('#ModalOne').show();
     }
-    //modal stars
+    //modal star count
     function modalStars() {
         if (counter > 22 && counter < 28) {
             $('#ModalFive').hide();
