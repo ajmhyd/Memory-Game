@@ -89,8 +89,10 @@ $(document).ready(function () {
 
     //display card
     function displayCard() {
-        this.classList.toggle('open');
-        this.classList.toggle('show');
+        if(openList.length != 2) {
+            this.classList.toggle('open');
+            this.classList.toggle('show');
+        }
     }
 
     //winner
