@@ -24,5 +24,4 @@ A card matching game played in the browser.
 
 * [Bootstrap](https://getbootstrap.com/)
 * [Font Awesome](https://fontawesome.com/)
-* [Jquery](https://www.google.com/search?q=jquery&oq=jqe&aqs=chrome.1.69i57j0l5.2236j0j1&sourceid=chrome&ie=UTF-8)
-
+* [jQuery](https://jquery.com/)
