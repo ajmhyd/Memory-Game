@@ -1,5 +1,7 @@
 # Memory Game Project
 
+[Click here to play the game](https://ajmhyd.github.io/Memory-Game/)
+
 ## Table of Contents
 
 * [Description](#Description)
