@@ -64,18 +64,23 @@ $(document).ready(function () {
     function resetStars() {
         if (!$('#starOne').hasClass('fa')) {
             $('#starOne').addClass('fa');
+            $('#starOne').addClass('fa-star');
         }
         if (!$('#starTwo').hasClass('fa')) {
             $('#starTwo').addClass('fa');
+            $('#starTwo').addClass('fa-star');
         }
         if (!$('#starThree').hasClass('fa')) {
             $('#starThree').addClass('fa');
+            $('#starThree').addClass('fa-star');
         }
         if (!$('#starFour').hasClass('fa')) {
             $('#starFour').addClass('fa');
+            $('#starFour').addClass('fa-star');
         }
         if (!$('#starFive').hasClass('fa')) {
             $('#starFive').addClass('fa');
+            $('#starFive').addClass('fa-star');
         }
     }
 
@@ -145,12 +150,16 @@ $(document).ready(function () {
     function stars() {
         if (counter > 22 && counter < 28) {
             $('#starFive').removeClass('fa');
+            $('#starFive').removeClass('fa-star');
         } else if (counter > 28 && counter < 34) {
             $('#starFour').removeClass('fa');
+            $('#starFour').removeClass('fa-star');
         } else if (counter > 34 && counter < 40) {
             $('#starThree').removeClass('fa');
+            $('#starThree').removeClass('fa-star');
         } else if (counter > 40 && counter < 46) {
             $('#starTwo').removeClass('fa');
+            $('#starTwo').removeClass('fa-star');
         }
     }
 
